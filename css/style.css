@@ -1,0 +1,81 @@
+body {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body div {
+    float: left;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 80%;
+    border: 1px dashed #f60;
+}
+
+.cb-attrs {
+    max-width: 600px;
+    margin: auto;
+}
+
+.cb-attrs ul {
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+.cb-attrs .selected i {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    overflow: hidden;
+    width: 9pt;
+    height: 9pt;
+    background-image: url(https://github.com/maxsky/imitate-tb-combo-select/raw/master/image/selected.png);
+    background-position: -62px -16px;
+    /* 指定图片位置 */
+    background-repeat: no-repeat;
+    text-indent: -99em;
+}
+
+.cb-attrs li {
+    position: relative;
+    float: left;
+    margin: 0 4px 4px 0;
+    padding: 1px;
+    background-color: #fff;
+    list-style: none;
+    vertical-align: middle;
+    line-height: 28px;
+}
+
+.cb-attrs li i {
+    display: none;
+}
+
+.cb-attrs li a {
+    display: block;
+    padding: 0 6px;
+    min-width: 10px;
+    border: 1px solid #e2e1e3;
+    background-color: #666;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 9pt;
+}
+
+.cb-attrs li a.enable {
+    background-color: #fff;
+    color: #000;
+}
+
+.cb-attrs li a:hover,
+.cb-attrs li.selected a,
+.cb-attrs li.selected a:hover {
+    margin: -1px;
+    border: 2px solid #df0001;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>仿淘宝套餐选择</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.staticfile.org/vue/2.6.9/vue.min.js"></script>
+</head>
+
+<body>
+    <div class="attrs">
+        <h1 align="center">展示区域</h1>
+        <dd class="cb-attrs">
+            <ul v-for="(attr, index) in attrs" :key="index">
+                <h2>{{attr.name}}</h2>
+                <li v-for="(option, i) in attr.options" :key="i" :class="['value', {'selected': option.selected}]"
+                    @click="handleSelect(attr, option.id)">
+                    <a :class="{'enable': available.includes(option.id)}" href="javascript:void(0);">
+                        <span>{{option.name}} - {{option.id}}</span>
+                    </a>
+                    <i></i>
+                </li>
+            </ul>
+        </dd>
+
+        <button v-on:click="getList()">获取sku</button>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
