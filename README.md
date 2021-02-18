@@ -14,3 +14,7 @@ public class CartesianProductUtil {
     }
 }
 ```
+
+### 效果图
+
+![](https://i.loli.net/2021/02/18/lkBJtLOMg9ve3Xs.png)
